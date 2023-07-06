@@ -1,8 +1,8 @@
 import './style.css'
 import retrieveStoredContent from './utils/retrieveStoredContent.ts';
 import handlerTask from './utils/handlerTask.ts';
-import aObservar from './utils/mutationObserver.ts';
 import deleteTasks from './utils/deleteTasks.ts';
+import mutationObserve from './utils/mutation.ts';
 
 //obtiene las tareas del local storage después de cargado el documento
 retrieveStoredContent();
@@ -14,4 +14,4 @@ handlerTask();
 deleteTasks()
 
 //MutationObserver para observar el taskContainer, si esta   vació reenderiza una plantilla de con un mensaje 
-aObservar('#taskContainer');
+mutationObserve('#taskContainer');

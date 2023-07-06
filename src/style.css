@@ -10,3 +10,15 @@
   background-attachment:fixed ;
   background-repeat: no-repeat;
 }
+
+.grid-responsive{
+  grid-template-columns: repeat(auto-fit, minmax(min(18rem,100%), 1fr));
+}
+
+.responsiveSize{
+  font-size: clamp(1.5rem, 7vw, 4rem); 
+}
+
+.letterResponsive{
+  font-size: clamp(1.2rem,2rem, 10vw);
+}

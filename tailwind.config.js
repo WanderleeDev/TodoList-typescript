@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow:{
+        shadowMix : '0 0 2em rgba(102, 110, 255, 0.667)',
+        shadowBlue: '0 0 2em rgba(49, 120, 198, 0.667)'
+      }
+    },
   },
   plugins: [],
 }
