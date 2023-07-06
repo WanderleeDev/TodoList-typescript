@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body class="text-stone-700 bg-zinc-500 grid min-h-full place-content-center h-screen gap-4 md:bg-black md:grid-cols-2 md:p-0 md:px-0 backGradient">
+
+    <form id="tasksFrom" class="bg-slate-200/40 p-8 grid gap-6 rounded-md max-w-[30rem] self-center justify-self-center shadow-md">
+      <h1 class="text-3xl text-emerald-400 font-black">Quiz</h1>
+      <div class="grid gap-2">
+        <label for="task">Task:</label>
+        <input id="task" name="task" class="w-full p-4 rounded" type="text">
+      </div>
+      <div class="grid gap-2">
+        <label for="descriṕtion">Description:</label>
+        <textarea id="descriṕtion" name="description" class="w-full p-4 rounded break-wordss  resize-none" ></textarea>
+      </div>
+      <button type="submit" id="btnAdd" class="py-2 px-4 justify-self-end rounded-tl-xl rounded-br-xl bg-emerald-400 shadow-md hover:shadow-emerald-300 duration-300 hover:bg-white hover:text-emerald-500 text-white transition-shadow" title="add Task" aria-label="Agregar tarea">Add task</button>
+    </form>
+
+    <div id="taskContainer" class="bg-stone-400/30 p-2 py-4 grid justify-center min-h-[15rem] rounded-md overflow-y-auto gap-10 xl:grid-cols-2 ">
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
